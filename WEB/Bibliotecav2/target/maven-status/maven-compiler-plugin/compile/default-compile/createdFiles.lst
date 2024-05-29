@@ -1,0 +1,10 @@
+web\Prestamos_Controlador.class
+dominio\Prestamos.class
+sqls\PrestamoDAO.class
+dominio\Libros.class
+web\Usuarios_Controlador.class
+sqls\LibroDAO.class
+web\Libros_Controlador.class
+sqls\UsuarioDAO.class
+dominio\Usuarios.class
+sqls\ConexionDB.class

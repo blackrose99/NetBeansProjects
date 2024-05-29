@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"><!-- comment -->
+        <link rel="stylesheet" type="text/css" href="folder/estilos.css"/>
+
+    </head>
+    <body>
+        <main class="contenedor">
+            
+             <div class="d-flex form-datos">
+                 <h1 class="mt-5">Registro de notas de Corte</h1>
+            <form action="/hTaller4/servlet" method="post" class="formulario"> 
+                
+                <label for="nombre">ID:</label>            
+                <input type="text" id="nombre" name="id" required><br>             
+                <label for="nombre">Nombre:</label>              
+                <input type="text" id="nombre" name="name" required><br>
+                     
+                <label for="nota1">Nota 1:</label>             
+                <input type="number" step="0.01" id="nota1" name="nota1"><br>
+       
+                <label for="nota2">Nota 2:</label>         
+                <input type="number" step="0.01" id="nota2" name="nota2"><br>
+      
+                <label for="nota3">Nota 3:</label>       
+                <input type="number" step="0.01" id="nota3" name="nota3"><br>
+         
+                <input type="submit" value="Enviar Datos" class="btn btn-primary">
+
+            </form> 
+                 <br>
+             <form action="/hTaller4/mostrar" method="post">
+                 <input type="submit" value="Ver Alumnlos" class="btn btn-primary">
+             </form>
+                
+
+        </div>
+        </main>
+    </body>
+</html>

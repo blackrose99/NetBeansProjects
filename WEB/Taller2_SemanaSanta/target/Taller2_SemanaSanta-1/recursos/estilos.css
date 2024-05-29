@@ -1,0 +1,121 @@
+
+.indes{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+}
+.ver{
+    background-color: aquamarine;
+
+    
+}
+
+.tabla{
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 20px;
+
+}
+.tabla th, .tabla-estudiantes td {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+}
+
+.tabla th {
+  background-color: #F5F5F5;
+  color: #333;
+}
+
+.tabla tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #007bff;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.btn:hover:before {
+  width: 400px;
+  height: 400px;
+}
+
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 12px 28px;
+  font-size: 10px;
+  font-weight: 300;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: none;
+  background-color: #007bff;
+  cursor: pointer;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.btn2:hover {
+  background-color: #0056b3;
+}
+
+.btn2:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.btn2:hover:before {
+  width: 50px;
+  height: 50px;
+}
+.formu2 {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+form a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

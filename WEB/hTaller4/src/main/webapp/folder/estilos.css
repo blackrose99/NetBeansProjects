@@ -1,0 +1,49 @@
+body{
+background-color: aqua;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #999999;
+    border-radius: 8px;
+    width: 500px;
+    box-shadow: 3px 0px 10px -5px black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+
+    .form-datos, .form-genero, .form-intereses, .form-comentario{
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.button{
+    background-color: rgb(6, 154, 246);
+    color: cornsilk;
+    border-radius: 5px;
+    padding: 9px;
+    border: 1px solid gray;
+    font-size: 15px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+label{
+    color: blue;
+}
+h1{
+    background-color: deepskyblue;
+    border-radius: 15px;
+ 
+
+}

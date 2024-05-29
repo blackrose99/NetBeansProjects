@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.USA">
+  <ClassDiagramComponents>
+    <Class name="ListaTrabajadores" package="USA" visibility="public" xPosition="25.0" yPosition="48.0">
+      <Fields>
+        <Field name="traba" type="ArrayList&lt;Trabajadores&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Listaemple" returnType="void" visibility="public"/>
+        <Method name="agregarTrabajador" returnType="void" visibility="public">
+          <Argument type="Trabajadores" name="tra"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListaUsuario" package="USA" visibility="public" xPosition="221.0" yPosition="364.0">
+      <Fields>
+        <Field name="Usuar" type="ArrayList&lt;Usuario&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="agregarUsuario" returnType="void" visibility="public">
+          <Argument type="Usuario" name="Usu"/>
+        </Method>
+        <Method name="BuscarCedula" returnType="void" visibility="public">
+          <Argument type="int" name="ced"/>
+        </Method>
+        <Method name="BuscarNombre" returnType="void" visibility="public">
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="BuscarArea" returnType="void" visibility="public">
+          <Argument type="int" name="codig"/>
+        </Method>
+        <Method name="eleiminarpro" returnType="boolean" visibility="public">
+          <Argument type="int" name="ced"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PruebaUsuario" package="USA" visibility="public" xPosition="1488.0" yPosition="341.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Trabajadores" package="USA" visibility="public" xPosition="386.0" yPosition="26.0">
+      <Fields>
+        <Field name="cargo_empresa" type="String" visibility="package"/>
+        <Field name="codigo_empleado" type="int" visibility="package"/>
+        <Field name="clave_acceso" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="cargo_empresa"/>
+          <Argument type="int" name="codigo_empleado"/>
+          <Argument type="String" name="clave_acceso"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="cedula"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="telefono"/>
+          <Argument type="double" name="temperatura"/>
+          <Argument type="String" name="motivo_emtrada"/>
+          <Argument type="String" name="fecha_entrada"/>
+          <Argument type="String" name="hora_entrada"/>
+          <Argument type="int" name="cod_area"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Mostrardatos" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Usuario" package="USA" visibility="public" xPosition="587.0" yPosition="307.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="cedula" type="int" visibility="package"/>
+        <Field name="edad" type="int" visibility="package"/>
+        <Field name="telefono" type="int" visibility="package"/>
+        <Field name="temperatura" type="double" visibility="package"/>
+        <Field name="motivo_emtrada" type="String" visibility="package"/>
+        <Field name="fecha_entrada" type="String" visibility="package"/>
+        <Field name="hora_entrada" type="String" visibility="package"/>
+        <Field name="cod_area" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="cedula"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="telefono"/>
+          <Argument type="double" name="temperatura"/>
+          <Argument type="String" name="motivo_emtrada"/>
+          <Argument type="String" name="fecha_entrada"/>
+          <Argument type="String" name="hora_entrada"/>
+          <Argument type="int" name="cod_area"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Mostrardatos" returnType="String" visibility="public"/>
+        <Method name="mostrardatos" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="USA.Trabajadores" target="USA.Usuario"/>
+    <UseRelation source="USA.ListaUsuario" target="USA.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Usuar" source="USA.ListaUsuario" target="USA.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Usuario&gt;"/>
+    <HasRelation name="traba" source="USA.ListaTrabajadores" target="USA.Trabajadores" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Trabajadores&gt;"/>
+    <UseRelation source="USA.ListaTrabajadores" target="USA.Trabajadores" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

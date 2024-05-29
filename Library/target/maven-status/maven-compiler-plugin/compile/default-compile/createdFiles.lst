@@ -1,0 +1,6 @@
+lib\Libros.class
+lib\Metodos_Libros.class
+lib\Metodos_Revistas.class
+lib\Publicacion.class
+lib\vistas_Libros_Revistas.class
+lib\Revistas.class

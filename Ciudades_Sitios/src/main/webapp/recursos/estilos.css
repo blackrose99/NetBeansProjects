@@ -1,0 +1,287 @@
+/* Estilos compartidos */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+    font-family: cursive, background-attachment ;
+}
+
+/* Estilos para el contenedor (container) */
+.container {
+    background-color: #ffffff;
+    margin: 0 auto; /* Margen horizontal automático para centrar horizontalmente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Usar flexbox */
+    flex-direction: column; /* Colocar elementos en columna vertical */
+    align-items: center; /* Centrar horizontalmente */
+    justify-content: center; /* Centrar verticalmente */
+}
+
+
+.btn-back {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.btn-back i {
+    margin-right: 5px;
+}
+
+.info-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+.estado-card {
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+    width: 70px;
+}
+
+.estado-abierto {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.estado-cerrado {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+/* Estilos específicos para el encabezado (header) */
+.navbar {
+    background-color: #b3e0ff; /* Cambiar a azul claro */
+    padding: 10px 0; /* Añadir relleno */
+    display: flex; /* Para alinear elementos horizontalmente */
+    justify-content: space-around; /* Espacio entre elementos */
+    align-items: center; /* Centrar verticalmente */
+
+}
+
+/* Estilos para el icono */
+.icon-container {
+    margin-right: 20px; /* Espacio entre el icono y el menú */
+}
+
+.icon-img {
+    max-width: 80px; /* Tamaño máximo de la imagen del icono */
+    height: auto;
+}
+
+/* Estilos para los elementos del menú */
+.nav-link {
+    text-decoration: none; /* Quitar subrayado */
+    color: #333; /* Color del texto */
+    margin-left: 20px; /* Espacio entre elementos del menú */
+}
+
+/* Estilos para la barra de búsqueda (search-bar) */
+.search-bar {
+    width: 95%; /* Ocupa todo el ancho */
+    margin-bottom: 20px; /* Añadir espacio inferior */
+}
+
+.search-bar input[type="text"] {
+    width: 100%; /* Ocupa todo el ancho */
+    padding: 10px; /* Padding property */
+    border: 1px solid #ccc; /* Border properties */
+    border-radius: 5px; /* Border properties */
+}
+
+/* Estilos para el botón "Visitar" */
+.btn-ver {
+    text-decoration: none; /* Quitar subrayado de los botones */
+    background-color: #007bff; /* Cambiar a azul */
+    color: #fff; /* Text properties */
+    padding: 3px 5px; /* Padding property */
+    border-radius: 5px; /* Border properties */
+}
+
+.btn-ver i {
+    margin-right: 5px;
+}
+
+/* Estilos para la tarjeta que contiene la tabla */
+.card {
+    border: 1px solid #ccc; /* Borde alrededor de la tarjeta */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 10px; /* Espaciado interno */
+    margin-top: 10px; /* Margen superior */
+
+}
+
+
+/* Estilos para la tabla (data-table) */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px; /* Reduzca el margen superior para que la tarjeta sea más compacta */
+ 
+}
+
+
+th, td {
+    padding: 5px; /* Reduzca el espaciado dentro de las celdas */
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+/*Estilos para Ciuades */
+.custom-column {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Clearfix para evitar problemas de altura con las columnas flotantes */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/*Boton de Volver*/
+
+  
+#bannerInicioCiudades  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    
+}
+
+#bannerInicioCiudades .btn {
+    align-self: flex-start;
+    margin-top: 10px; /* Ajusta la cantidad de espacio entre el botón y la imagen */
+}
+.imagenBanner {
+    border: 10px solid black;
+    border-radius: 10px; /* Cambia el radio del borde a 10 píxeles */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+
+
+/*
+Estilos para las reservas
+*/
+
+.site-details {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .site-icon {
+            width: 30px;
+            height: 30px;
+            font-size: 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-align: center;
+            border-radius: 50%;
+            margin-right: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .site-info {
+            display: inline-flex;
+            flex-direction: column;
+        }
+        .site-info h4 {
+            font-size: 18px;
+            margin: 0;
+        }
+        .site-info p {
+            margin: 5px 0;
+        }
+
+
+
+
+

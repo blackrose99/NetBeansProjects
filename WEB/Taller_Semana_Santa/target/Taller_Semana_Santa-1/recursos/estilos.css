@@ -1,0 +1,26 @@
+body{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+ align-items: center;
+   height: 100vh; 
+}
+div{
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.boton{
+  background-color: #4CAF50; /* Color de fondo */
+  border: none; /* Quitamos el borde */
+  color: white; /* Color del texto */
+  padding: 12px 24px; /* Añadimos espacio alrededor del texto */
+  text-align: center; /* Centramos el texto */
+  text-decoration: none; /* Quitamos la subrayado del texto */
+  display: inline-block; /* Hacemos que el botón sea un bloque en línea */
+  font-size: 16px; /* Tamaño del texto */
+  margin: 4px 2px; /* Añadimos margen al botón */
+  cursor: pointer; /* Cambiamos el cursor al pasar por encima */
+  border-radius: 10px; /* Añadimos bordes redondeados */
+}
+

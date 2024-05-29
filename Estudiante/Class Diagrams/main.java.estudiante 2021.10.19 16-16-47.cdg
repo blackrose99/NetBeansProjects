@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.estudiante">
+  <ClassDiagramComponents>
+    <Class name="Estudiante" package="estudiante" visibility="public" xPosition="89.0" yPosition="19.0">
+      <Fields>
+        <Field name="documento" type="String" visibility="package"/>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="prom_acumulado" type="double" visibility="package"/>
+        <Field name="creditos_cur" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="documento"/>
+          <Argument type="String" name="cedula"/>
+          <Argument type="double" name="prom_acumulado"/>
+          <Argument type="int" name="creditos_cur"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getDocumento" returnType="String" visibility="public"/>
+        <Method name="setDocumento" returnType="void" visibility="public">
+          <Argument type="String" name="documento"/>
+        </Method>
+        <Method name="getCedula" returnType="String" visibility="public"/>
+        <Method name="setCedula" returnType="void" visibility="public">
+          <Argument type="String" name="cedula"/>
+        </Method>
+        <Method name="getProm_acumulado" returnType="double" visibility="public"/>
+        <Method name="setProm_acumulado" returnType="void" visibility="public">
+          <Argument type="double" name="prom_acumulado"/>
+        </Method>
+        <Method name="getCreditos_cur" returnType="int" visibility="public"/>
+        <Method name="setCreditos_cur" returnType="void" visibility="public">
+          <Argument type="int" name="creditos_cur"/>
+        </Method>
+        <Method name="MostrarDatos" returnType="String" visibility="public"/>
+        <Method name="newprom" returnType="double" visibility="public">
+          <Argument type="int" name="credit"/>
+          <Argument type="double" name="promed"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PruebaEstudiante" package="estudiante" visibility="public" xPosition="320.0" yPosition="435.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="estudiante.Estudiante" target="estudiante.PruebaEstudiante"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

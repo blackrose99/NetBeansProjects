@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="main.java.USA">
+  <ClassDiagramComponents>
+    <Class name="Areas" package="USA" visibility="public" xPosition="455.0" yPosition="20.0">
+      <Fields>
+        <Field name="nom_area" type="String" visibility="package"/>
+        <Field name="capa_max" type="int" visibility="package"/>
+        <Field name="cod" type="int" visibility="package"/>
+        <Field name="cantidad_actual" type="int" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="nom_area"/>
+          <Argument type="int" name="capa_max"/>
+          <Argument type="int" name="cod"/>
+          <Argument type="int" name="cantidad_actual"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="mostr" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="comparacedu" package="USA" visibility="public" xPosition="40.0" yPosition="581.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="compare" returnType="int" visibility="public">
+          <Argument type="Usuario" name="o"/>
+          <Argument type="Usuario" name="m"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="compararmo" package="USA" visibility="public" xPosition="50.0" yPosition="318.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="compare" returnType="int" visibility="public">
+          <Argument type="Usuario" name="x"/>
+          <Argument type="Usuario" name="j"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListaAreas" package="USA" visibility="public" xPosition="40.0" yPosition="36.0">
+      <Fields>
+        <Field name="ar" type="ArrayList&lt;Areas&gt;" visibility="package"/>
+        <Field name="Usuar" type="ArrayList&lt;Usuario&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="agregarArea" returnType="void" visibility="public">
+          <Argument type="Areas" name="are"/>
+        </Method>
+        <Method name="cantidaar" returnType="boolean" visibility="public">
+          <Argument type="int" name="codareaa"/>
+        </Method>
+        <Method name="nodejapa" returnType="boolean" visibility="public">
+          <Argument type="int" name="codareaa"/>
+        </Method>
+        <Method name="disminu" returnType="void" visibility="public">
+          <Argument type="double" name="tem"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListaTrabajadores" package="USA" visibility="public" xPosition="1358.0" yPosition="525.0">
+      <Fields>
+        <Field name="traba" type="ArrayList&lt;Trabajadores&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="Listaemple" returnType="void" visibility="public"/>
+        <Method name="agregarTrabajador" returnType="void" visibility="public">
+          <Argument type="Trabajadores" name="tra"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ListaUsuario" package="USA" visibility="public" xPosition="929.0" yPosition="7.0">
+      <Fields>
+        <Field name="Usuar" type="ArrayList&lt;Usuario&gt;" visibility="package"/>
+        <Field name="ar" type="ArrayList&lt;Areas&gt;" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="agregarUsuario" returnType="void" visibility="public">
+          <Argument type="Usuario" name="Usu"/>
+        </Method>
+        <Method name="BuscarCedula" returnType="boolean" visibility="public">
+          <Argument type="int" name="ced"/>
+        </Method>
+        <Method name="BuscarNombre" returnType="boolean" visibility="public">
+          <Argument type="String" name="nom"/>
+        </Method>
+        <Method name="BuscarArea" returnType="boolean" visibility="public">
+          <Argument type="int" name="codig"/>
+        </Method>
+        <Method name="eleiminarpro" returnType="boolean" visibility="public">
+          <Argument type="int" name="ced"/>
+        </Method>
+        <Method name="ordealfa" returnType="void" visibility="public"/>
+        <Method name="ordencedu" returnType="void" visibility="public"/>
+        <Method name="ordemotivo" returnType="void" visibility="public"/>
+        <Method name="ordenporcogarea" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="ordecog" package="USA" visibility="public" xPosition="1380.0" yPosition="318.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="compare" returnType="int" visibility="public">
+          <Argument type="Usuario" name="t"/>
+          <Argument type="Usuario" name="u"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PruebaUsuario" package="USA" visibility="public" xPosition="1392.0" yPosition="93.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Trabajadores" package="USA" visibility="public" xPosition="635.0" yPosition="887.0">
+      <Fields>
+        <Field name="cargo_empresa" type="String" visibility="package"/>
+        <Field name="codigo_empleado" type="int" visibility="package"/>
+        <Field name="clave_acceso" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="cargo_empresa"/>
+          <Argument type="int" name="codigo_empleado"/>
+          <Argument type="String" name="clave_acceso"/>
+          <Argument type="int" name="cod_area"/>
+          <Argument type="double" name="temperatura"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="cedula"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="telefono"/>
+          <Argument type="String" name="motivo_emtrada"/>
+          <Argument type="String" name="fecha_entrada"/>
+          <Argument type="String" name="hora_entrada"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Mostrardatos" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Usuario" package="USA" visibility="public" xPosition="366.0" yPosition="420.0">
+      <Fields>
+        <Field name="cod_area" type="int" visibility="package"/>
+        <Field name="temperatura" type="double" visibility="package"/>
+        <Field name="nombre" type="String" visibility="package"/>
+        <Field name="cedula" type="int" visibility="package"/>
+        <Field name="edad" type="int" visibility="package"/>
+        <Field name="telefono" type="int" visibility="package"/>
+        <Field name="motivo_emtrada" type="String" visibility="package"/>
+        <Field name="fecha_entrada" type="String" visibility="package"/>
+        <Field name="hora_entrada" type="String" visibility="package"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="int" name="cod_area"/>
+          <Argument type="double" name="temperatura"/>
+          <Argument type="String" name="nombre"/>
+          <Argument type="int" name="cedula"/>
+          <Argument type="int" name="edad"/>
+          <Argument type="int" name="telefono"/>
+          <Argument type="String" name="motivo_emtrada"/>
+          <Argument type="String" name="fecha_entrada"/>
+          <Argument type="String" name="hora_entrada"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="Mostrardatos" returnType="String" visibility="public"/>
+        <Method name="Mos" returnType="String" visibility="public"/>
+        <Method name="mostrardatos" returnType="String" visibility="public"/>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="Usuario" name="o"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="USA.Usuario" target="USA.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="USA.compararmo" target="USA.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="USA.ordecog" target="USA.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="USA.Trabajadores" target="USA.Usuario"/>
+    <UseRelation source="USA.ListaTrabajadores" target="USA.Trabajadores" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="traba" source="USA.ListaTrabajadores" target="USA.Trabajadores" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Trabajadores&gt;"/>
+    <HasRelation name="Usuar" source="USA.ListaUsuario" target="USA.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Usuario&gt;"/>
+    <UseRelation source="USA.ListaAreas" target="USA.Areas" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ar" source="USA.ListaUsuario" target="USA.Areas" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Areas&gt;"/>
+    <HasRelation name="ar" source="USA.ListaAreas" target="USA.Areas" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Areas&gt;"/>
+    <HasRelation name="Usuar" source="USA.ListaAreas" target="USA.Usuario" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Usuario&gt;"/>
+    <UseRelation source="USA.ListaUsuario" target="USA.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="USA.comparacedu" target="USA.Usuario" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
